@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class Task2 {
+public class SearchForCharactersAndNumberOfRepetitions {
     public void run() throws IOException {
         //считываем строку с клавиатуры
         System.out.println("Введите строку:");

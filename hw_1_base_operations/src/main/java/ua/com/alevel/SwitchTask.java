@@ -1,8 +1,6 @@
 package ua.com.alevel;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 
 public class SwitchTask {
     private String enter;
@@ -21,18 +19,18 @@ public class SwitchTask {
 
         switch (enter) {
             case ("1"): {
-                Task1 task1 = new Task1();
-                task1.run();
+                SumOfNumbers sumOfNumbers = new SumOfNumbers();
+                sumOfNumbers.run();
             }
             break;
             case ("2"): {
-                Task2 task2 = new Task2();
-                task2.run();
+                SearchForCharactersAndNumberOfRepetitions searchForCharactersAndNumberOfRepetitions = new SearchForCharactersAndNumberOfRepetitions();
+                searchForCharactersAndNumberOfRepetitions.run();
             }
             break;
             case ("3"): {
-                Task3 task3 = new Task3();
-                task3.run();
+                EndLessonTime endLessonTime = new EndLessonTime();
+                endLessonTime.run();
             }
             break;
             case ("0"): {
@@ -44,6 +42,5 @@ public class SwitchTask {
             }
             break;
         }
-//        readerNumberTask.close();
     }
 }

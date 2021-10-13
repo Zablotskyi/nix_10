@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Task3 {
+public class EndLessonTime {
     public void run() throws IOException {
         //создаем map в котором будем хранить в ключе номер урока, а в значении объект у которого два поля (часы и минуты)
         Map<String, LessonTime> lessonsByTime = new HashMap<>();
