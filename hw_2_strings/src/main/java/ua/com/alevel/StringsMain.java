@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class MainClass {
+public class StringsMain {
     public static void main(String[] args) throws IOException {
         String s1 = "Добрый день!";
         String s2 = "Перечень задач:";

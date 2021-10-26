@@ -6,12 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="reversestring" />
         <module name="hw_2_strings" />
+        <module name="hw_3_start_oop" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="hw_2_strings" target="17" />
+      <module name="hw_3_start_oop" target="17" />
       <module name="nix_10" target="17" />
+      <module name="reversestring" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>

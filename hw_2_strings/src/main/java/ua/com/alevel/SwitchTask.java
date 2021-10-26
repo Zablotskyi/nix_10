@@ -18,19 +18,16 @@ public class SwitchTask {
         switch (enter) {
             case ("1"): {
                 ReverseString revString = new ReverseString();
-//                revString.enterString();
                 revString.reverseString();
             }
             break;
             case ("2"): {
                 ReverseString revString = new ReverseString();
-//                revString.enterString();
                 revString.reverseSubstringInString();
             }
             break;
             case ("3"): {
                 ReverseString revString = new ReverseString();
-//                revString.enterString();
                 revString.reverseStringByIndex();
             }
             break;

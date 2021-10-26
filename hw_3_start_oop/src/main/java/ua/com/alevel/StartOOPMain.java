@@ -1,7 +1,11 @@
 package ua.com.alevel;
 
-public class MainClass {
+import ua.com.alevel.controller.UserController;
+
+public class StartOOPMain {
+
     public static void main(String[] args) {
-        System.out.println("Hello");
+        new UserController().run();
     }
 }
+
