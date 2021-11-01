@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class MainClass {
+
     public static void main(String[] args) throws IOException {
         String s1 = "Добрый день!";
         String s2 = "Перечень задач:";
@@ -22,8 +23,7 @@ public class MainClass {
             if (!(enterTask.equals("exit"))) {
                 SwitchTask switchTask = new SwitchTask(enterTask);
                 switchTask.run();
-            }
-            else {
+            } else {
                 System.exit(0);
             }
         }

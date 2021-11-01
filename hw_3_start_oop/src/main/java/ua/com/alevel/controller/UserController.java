@@ -2,6 +2,7 @@ package ua.com.alevel.controller;
 
 import ua.com.alevel.entity.User;
 import ua.com.alevel.service.UserService;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -45,11 +46,21 @@ public class UserController {
 
     private void crud(String position, BufferedReader reader) {
         switch (position) {
-            case "1" : create(reader); break;
-            case "2" : update(reader); break;
-            case "3" : delete(reader); break;
-            case "4" : findById(reader); break;
-            case "5" : findAll(reader); break;
+            case "1":
+                create(reader);
+                break;
+            case "2":
+                update(reader);
+                break;
+            case "3":
+                delete(reader);
+                break;
+            case "4":
+                findById(reader);
+                break;
+            case "5":
+                findAll(reader);
+                break;
         }
         runNavigation();
     }

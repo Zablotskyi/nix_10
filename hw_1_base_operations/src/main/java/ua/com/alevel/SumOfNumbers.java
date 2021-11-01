@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class SumOfNumbers {
+
     public void run() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         //считываем с клавиатуры строку

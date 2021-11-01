@@ -22,7 +22,7 @@ public class UserService {
         return userDao.findById(id);
     }
 
-    public User[] findAll(){
+    public User[] findAll() {
         return userDao.findAll();
     }
 }

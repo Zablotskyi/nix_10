@@ -21,7 +21,7 @@ public class UserDao {
         return DBUser.getInstance().findById(id);
     }
 
-    public User[] findAll(){
+    public User[] findAll() {
         return DBUser.getInstance().findAll();
     }
 }

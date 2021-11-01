@@ -16,10 +16,9 @@ public class ReverseString {
 
         if (str.length() <= 1) {
             System.out.println(str);
-        }
-        else {
+        } else {
             String result = "";
-            for (int i = array.length - 1; i >= 0; i --) {
+            for (int i = array.length - 1; i >= 0; i--) {
                 result += array[i];
             }
             System.out.println(result);
@@ -35,10 +34,10 @@ public class ReverseString {
         //преобразовуем подстроку в массив символов и делаем реверс
         char[] array = subString.toCharArray();
         String expandedSubString = "";
-        for (int i = array.length - 1; i >= 0; i --) {
+        for (int i = array.length - 1; i >= 0; i--) {
             expandedSubString += array[i];
         }
-        String [] words = str.split(subString);
+        String[] words = str.split(subString);
         String result = words[0] + expandedSubString + words[1];
         System.out.println(result);
     }
@@ -57,19 +56,16 @@ public class ReverseString {
 
         if (str.length() <= 1) {
             System.out.println(str);
-        }
-        else if (firstIndex == lastIndex) {
+        } else if (firstIndex == lastIndex) {
             System.out.println(str);
-        }
-        else if (firstIndex < lastIndex) {
+        } else if (firstIndex < lastIndex) {
             String resultReverse = "";
-            for (int i = lastIndex; i >= firstIndex; i --) {
+            for (int i = lastIndex; i >= firstIndex; i--) {
                 resultReverse += array[i];
             }
             String result = str.substring(0, firstIndex) + resultReverse + str.substring(lastIndex + 1, str.length());
             System.out.println(result);
-        }
-        else {
+        } else {
             System.out.println("firstIndex больше чем lastIndex");
         }
     }

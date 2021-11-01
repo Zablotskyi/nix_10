@@ -33,7 +33,7 @@ public class User {
     @Override
     public String toString() {
         return "Имя: " + this.name +
-               " Возраст: " + this.age +
-               " Телефон: " + this.id;
+                " Возраст: " + this.age +
+                " Телефон: " + this.id;
     }
 }

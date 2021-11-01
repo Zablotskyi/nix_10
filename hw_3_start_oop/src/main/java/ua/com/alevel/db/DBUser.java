@@ -5,8 +5,8 @@ import java.util.Arrays;
 
 public class DBUser {
 
-    private User[] users;
     private static DBUser instance;
+    private User[] users;
 
     private DBUser() {
         users = new User[0];
@@ -32,7 +32,7 @@ public class DBUser {
     }
 
     public void delete(long id) {
-        for (int i = 0; i < users.length; i ++  ) {
+        for (int i = 0; i < users.length; i++) {
             if (id == (users[i].getId())) {
                 users[i] = null;
             }
@@ -41,7 +41,7 @@ public class DBUser {
     }
 
     public User findById(long id) {
-        for (int i = 0; i < users.length; i ++) {
+        for (int i = 0; i < users.length; i++) {
             if (id == (users[i].getId())) {
                 return users[i];
             }
@@ -72,10 +72,10 @@ public class DBUser {
         users = new User[tempArrayUsers.length - 1];
 
         int count = 0;
-        for (int i = 0; i < tempArrayUsers.length; i ++) {
+        for (int i = 0; i < tempArrayUsers.length; i++) {
             if (tempArrayUsers[count] != null) {
                 users[count] = tempArrayUsers[i];
-                count ++;
+                count++;
             }
         }
     }
