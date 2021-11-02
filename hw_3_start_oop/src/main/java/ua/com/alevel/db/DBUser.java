@@ -1,4 +1,5 @@
 package ua.com.alevel.db;
+
 import ua.com.alevel.entity.User;
 
 import java.util.Arrays;
@@ -52,14 +53,6 @@ public class DBUser {
     public User[] findAll() {
         return users;
     }
-
-//    private String generateId() {
-//        String id = UUID.randomUUID().toString();
-//        if (users.stream().anyMatch(user -> user.getId().equals(id))) {
-//            return generateId();
-//        }
-//        return id;
-//    }
 
     //метод увеличивающий массил на одну ячейку
     private void arrayUsersSizeUp() {

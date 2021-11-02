@@ -1,11 +1,11 @@
 package ua.com.alevel;
 
-import ua.com.alevel.level_2.FindMaxDepthOfBinaryTree.FindMaxDepthOfBinaryTree;
-import ua.com.alevel.level_1.AreaOfTriangle;
-import ua.com.alevel.level_1.CorrectMoveOfKnightOnChessboard;
-import ua.com.alevel.level_1.NumberOfUniqueCharacters;
-import ua.com.alevel.level_2.InputStringIsValid;
-import ua.com.alevel.level_3.GameLife.GameLife;
+import ua.com.alevel.level2.findmaxdepthofbinarytree.FindMaxDepthOfBinaryTree;
+import ua.com.alevel.level1.AreaOfTriangle;
+import ua.com.alevel.level1.CorrectMoveOfKnightOnChessboard;
+import ua.com.alevel.level1.NumberOfUniqueCharacters;
+import ua.com.alevel.level2.InputStringIsValid;
+import ua.com.alevel.level3.gamelife.GameLife;
 
 import java.io.BufferedReader;
 import java.io.IOException;

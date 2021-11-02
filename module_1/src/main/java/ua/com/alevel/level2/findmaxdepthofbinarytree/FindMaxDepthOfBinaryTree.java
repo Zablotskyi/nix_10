@@ -1,4 +1,4 @@
-package ua.com.alevel.level_2.FindMaxDepthOfBinaryTree;
+package ua.com.alevel.level2.findmaxdepthofbinarytree;
 
 import java.util.Scanner;
 
