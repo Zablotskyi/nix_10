@@ -1,4 +1,4 @@
-package ua.com.alevel.levelOne;
+package ua.com.alevel.level1;
 
 import java.util.Scanner;
 
@@ -20,6 +20,7 @@ public class CorrectMoveOfKnightOnChessboard {
     }
 
     public void run() {
+
         Scanner inputUser = new Scanner(System.in);
         System.out.println("Сделайте ход коня в формате \"g1-f3\" (где g1 стартовая позиция, f3 куда ходит конь), или введите \"exit\" для выхода");
 

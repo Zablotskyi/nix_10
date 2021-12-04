@@ -1,4 +1,4 @@
-package ua.com.alevel.levelTwo.FindMaxDepthOfBinaryTree;
+package ua.com.alevel.level2.findmaxdepthofbinarytree;
 
 import java.util.Stack;
 
@@ -8,12 +8,6 @@ class BinaryTree {
     private BinaryTree leftChild; //левый узел потомок
     private BinaryTree rightChild; //правый узел потомок
     private BinaryTree rootBinaryTree; //корневой узел
-
-//    public BinaryTree(int value, BinaryTree leftChild, BinaryTree rightChild) {
-//        this.value = value;
-//        this.leftChild = leftChild;
-//        this.rightChild = rightChild;
-//    }
 
     public BinaryTree(int value) {
         this.value = value;
@@ -129,5 +123,4 @@ class BinaryTree {
         }
         System.out.println("\n" + separator);//подводим черту
     }
-
 }

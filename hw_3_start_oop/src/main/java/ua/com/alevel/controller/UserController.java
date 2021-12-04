@@ -9,9 +9,6 @@ import java.io.InputStreamReader;
 
 public class UserController {
 
-//    public static final Pattern VALID_EMAIL_ADDRESS_REGEX =
-//            Pattern.compile("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$", Pattern.CASE_INSENSITIVE);
-
     private final UserService userService = new UserService();
 
     public void run() {
@@ -69,22 +66,15 @@ public class UserController {
         try {
             System.out.println("Введите свое имя");
             String name = reader.readLine();
-//            System.out.println("Please, enter your email");
-//            String email = reader.readLine();
-//            Matcher matcher = VALID_EMAIL_ADDRESS_REGEX.matcher(email);
-//            boolean emailRegex =  matcher.find();
-//            System.out.println("emailRegex = " + emailRegex);
             System.out.println("Введите свой возраст");
             int age = Integer.parseInt(reader.readLine());
             System.out.println("Введите номер телефона без пробелов в формате 3 *** ххххххх, где * - это код оператора, х - номер телефона");
             long phone = Long.parseLong(reader.readLine());
 
-
             User user = new User();
             user.setAge(age);
             user.setName(name);
             user.setId(phone);
-//            user.setEmail(email);
             userService.create(user);
         } catch (IOException e) {
             System.out.println("ошибка: = " + e.getMessage());

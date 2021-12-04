@@ -1,6 +1,7 @@
 package ua.com.alevel.db;
 
 import ua.com.alevel.entity.User;
+
 import java.util.Arrays;
 
 public class DBUser {
@@ -20,7 +21,7 @@ public class DBUser {
     }
 
     public void create(User user) {
-        arraySizeUp();
+        arrayUsersSizeUp();
         user.setId(user.getId());
         users[users.length - 1] = user;
     }
@@ -53,16 +54,8 @@ public class DBUser {
         return users;
     }
 
-//    private String generateId() {
-//        String id = UUID.randomUUID().toString();
-//        if (users.stream().anyMatch(user -> user.getId().equals(id))) {
-//            return generateId();
-//        }
-//        return id;
-//    }
-
     //метод увеличивающий массил на одну ячейку
-    private void arraySizeUp() {
+    private void arrayUsersSizeUp() {
         users = Arrays.copyOf(users, users.length + 1);
     }
 

@@ -1,11 +1,10 @@
-package ua.com.alevel.levelOne;
+package ua.com.alevel.level1;
 
 import java.util.Scanner;
 
 public class AreaOfTriangle {
 
     public void run() {
-
         double x1, x2, x3, y1, y2, y3, sideAB, sideBC, sideCA;
 
         Scanner scanner = new Scanner(System.in);

@@ -1,4 +1,4 @@
-package ua.com.alevel.levelThree.GameLife;
+package ua.com.alevel.level3.gamelife;
 
 import java.util.ArrayList;
 
