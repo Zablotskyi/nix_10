@@ -1,6 +1,6 @@
 package ua.com.alevel.db;
-import ua.com.alevel.entity.User;
 
+import ua.com.alevel.entity.User;
 import java.util.Arrays;
 
 public class DBUser {
@@ -20,7 +20,7 @@ public class DBUser {
     }
 
     public void create(User user) {
-        arrayUsersSizeUp();
+        arraySizeUp();
         user.setId(user.getId());
         users[users.length - 1] = user;
     }
@@ -62,7 +62,7 @@ public class DBUser {
 //    }
 
     //метод увеличивающий массил на одну ячейку
-    private void arrayUsersSizeUp() {
+    private void arraySizeUp() {
         users = Arrays.copyOf(users, users.length + 1);
     }
 

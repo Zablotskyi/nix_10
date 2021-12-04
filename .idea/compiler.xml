@@ -6,21 +6,29 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="hw_2_strings" />
-        <module name="reversestring" />
+        <module name="hw_7_ionio" />
         <module name="module_1" />
+        <module name="hw_2_strings" />
+        <module name="hw_6_exception" />
+        <module name="hw_4_logs_and_test" />
+        <module name="reversestring" />
         <module name="hw_3_start_oop" />
         <module name="hw_1_base_operations" />
+        <module name="hw_5_collection" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="hw_1_base_operations" target="17" />
-      <module name="hw_2_strings" target="17" />
-      <module name="hw_3_start_oop" target="17" />
-      <module name="module_1" target="17" />
+      <module name="hw_1_base_operations" target="14" />
+      <module name="hw_2_strings" target="14" />
+      <module name="hw_3_start_oop" target="14" />
+      <module name="hw_4_logs_and_test" target="17" />
+      <module name="hw_5_collection" target="15" />
+      <module name="hw_6_exception" target="14" />
+      <module name="hw_7_ionio" target="14" />
+      <module name="module_1" target="14" />
       <module name="module_2" target="17" />
-      <module name="nix_10" target="17" />
-      <module name="reversestring" target="17" />
+      <module name="nix_10" target="14" />
+      <module name="reversestring" target="14" />
     </bytecodeTargetLevel>
   </component>
 </project>

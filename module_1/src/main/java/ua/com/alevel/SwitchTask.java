@@ -1,11 +1,11 @@
 package ua.com.alevel;
 
-import ua.com.alevel.level_2.FindMaxDepthOfBinaryTree.FindMaxDepthOfBinaryTree;
-import ua.com.alevel.level_1.AreaOfTriangle;
-import ua.com.alevel.level_1.CorrectMoveOfKnightOnChessboard;
-import ua.com.alevel.level_1.NumberOfUniqueCharacters;
-import ua.com.alevel.level_2.InputStringIsValid;
-import ua.com.alevel.level_3.GameLife.GameLife;
+import ua.com.alevel.levelTwo.FindMaxDepthOfBinaryTree.FindMaxDepthOfBinaryTree;
+import ua.com.alevel.levelOne.AreaOfTriangle;
+import ua.com.alevel.levelOne.CorrectMoveOfKnightOnChessboard;
+import ua.com.alevel.levelOne.NumberOfUniqueCharacters;
+import ua.com.alevel.levelTwo.InputStringIsValid;
+import ua.com.alevel.levelThree.GameLife.GameLife;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,18 +14,16 @@ import java.io.InputStreamReader;
 public class SwitchTask {
 
     public void run() throws IOException {
-        String s = """
-                Перечень задач:
-                Уровень 1
-                1. Дан массив чисел. Вернуть количество уникальных чисел;
-                2. Ход коня по шахматной доске;
-                3. Вычислить площадь треугольника ABC;
-                Уровень 2
-                4. Является ли входная строка допустимой;
-                5. По заданному бинарному дереву найти максимальную глубину;
-                Уровень 3
-                6. Игра Жизни.
-                """;
+        String s = "Перечень задач: /n" +
+                "Уровень 1 /n" +
+                "1. Дан массив чисел. Вернуть количество уникальных чисел; /n" +
+                "2. Ход коня по шахматной доске; /n" +
+                "3. Вычислить площадь треугольника ABC; /n" +
+                "Уровень 2 /n" +
+                "4. Является ли входная строка допустимой; /n" +
+                "5. По заданному бинарному дереву найти максимальную глубину; /n" +
+                "Уровень 3 /n" +
+                "6. Игра Жизни.";
 
         while (true) {
             System.out.println(s);
