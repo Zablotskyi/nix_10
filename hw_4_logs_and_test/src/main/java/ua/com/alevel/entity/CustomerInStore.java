@@ -27,7 +27,7 @@ public class CustomerInStore {
     @Override
     public String toString() {
         return "CustomerInStore{" +
-                "Id покупателя: " + customerId + '\'' +
+                " Id покупателя: " + customerId + '\'' +
                 " Id магазина: " + storeId + '\'' +
                 '}';
     }

@@ -1,6 +1,5 @@
 package ua.com.alevel.controller;
 
-import ua.com.alevel.db.DBStore;
 import ua.com.alevel.entity.GroupOfGoods;
 import ua.com.alevel.entity.Store;
 import ua.com.alevel.service.StoreService;
@@ -8,7 +7,6 @@ import ua.com.alevel.service.StoreService;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.IllegalFormatCodePointException;
 
 public class StoreController {
 
@@ -16,8 +14,7 @@ public class StoreController {
 
     public void run() {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("БАЗА МАГАЗИНОВ");
-        System.out.println("Выберите действие");
+        System.out.println("БАЗА МАГАЗИНОВ \n Выберите действие");
         String position;
         try {
             runNavigation();
@@ -48,24 +45,12 @@ public class StoreController {
 
     private void crud(String position, BufferedReader reader) {
         switch (position) {
-            case "1":
-                create(reader);
-                break;
-            case "2":
-                update(reader);
-                break;
-            case "3":
-                delete(reader);
-                break;
-            case "4":
-                findById(reader);
-                break;
-            case "5":
-                findAll(reader);
-                break;
-            case "9":
-                new CustomerController().run();
-                break;
+            case "1" -> create(reader);
+            case "2" -> update(reader);
+            case "3" -> delete(reader);
+            case "4" -> findById(reader);
+            case "5" -> findAll(reader);
+            case "9" -> new CustomerController().run();
         }
         runNavigation();
     }
@@ -77,6 +62,7 @@ public class StoreController {
         try {
             System.out.println("Ведите название магазина");
             String name = reader.readLine();
+//            store.setName(reader.readLine());
             System.out.println("""
                     Выбирите категорию магазина:
                     нажмите 1 для родукты;
@@ -169,20 +155,14 @@ public class StoreController {
     }
 
     private String setCategoriesStore(String categories) {
-        if (categories.equals("1")) {
-            categories = GroupOfGoods.FOOD.name();
-        } else if (categories.equals("2")) {
-            categories = GroupOfGoods.HOUSEHOLD_GOODS.name();
-        } else if (categories.equals("3")) {
-            categories = GroupOfGoods.CLOTHES.name();
-        } else if (categories.equals("4")) {
-            categories = GroupOfGoods.PHARMACY.name();
-        } else if (categories.equals("5")) {
-            categories = GroupOfGoods.TOOLS.name();
-        } else if (categories.equals("6")) {
-            categories = GroupOfGoods.AUTO_PARTS.name();
-        } else {
-            categories = GroupOfGoods.PET_SHOP.name();
+        switch (categories) {
+            case "1" -> categories = GroupOfGoods.FOOD.name();
+            case "2" -> categories = GroupOfGoods.HOUSEHOLD_GOODS.name();
+            case "3" -> categories = GroupOfGoods.CLOTHES.name();
+            case "4" -> categories = GroupOfGoods.PHARMACY.name();
+            case "5" -> categories = GroupOfGoods.TOOLS.name();
+            case "6" -> categories = GroupOfGoods.AUTO_PARTS.name();
+            default -> categories = GroupOfGoods.PET_SHOP.name();
         }
         return categories;
     }

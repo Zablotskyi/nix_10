@@ -2,7 +2,6 @@ package ua.com.alevel;
 
 import ua.com.alevel.controller.CustomerController;
 import ua.com.alevel.controller.StoreController;
-import ua.com.alevel.entity.Store;
 import ua.com.alevel.service.StoreService;
 
 import java.util.Scanner;

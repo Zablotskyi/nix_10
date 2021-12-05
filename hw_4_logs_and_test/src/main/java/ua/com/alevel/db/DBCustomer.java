@@ -43,9 +43,9 @@ public class DBCustomer {
     }
 
     public Customer findById(long id) {
-        for (int i = 0; i < customers.length; i++) {
-            if (id == (customers[i].getId())) {
-                return customers[i];
+        for (Customer customer : customers) {
+            if (id == (customer.getId())) {
+                return customer;
             }
         }
         throw new RuntimeException("пользователь не найден");
@@ -66,9 +66,9 @@ public class DBCustomer {
         customers = new Customer[tempArrayUsers.length - 1];
 
         int count = 0;
-        for (int i = 0; i < tempArrayUsers.length; i++) {
+        for (Customer tempArrayUser : tempArrayUsers) {
             if (tempArrayUsers[count] != null) {
-                customers[count] = tempArrayUsers[i];
+                customers[count] = tempArrayUser;
                 count++;
             }
         }
