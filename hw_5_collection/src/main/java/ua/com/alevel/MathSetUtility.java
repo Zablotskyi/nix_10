@@ -471,48 +471,4 @@ public class MathSetUtility {
             System.out.println("Вы не создали MathSet");
         }
     }
-
-//    Number[] removingDuplicateNumbers(Number[] array) {/////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//        if (array == null || array.length == 0) {
-//            return array;
-//        }
-//        int n = 1;
-//        for (int i = 1; i < array.length; i++) {
-//            if (array[i] != array[i - 1]) n++;
-//        }
-//        Number[] resArray = new Number[n];
-//        resArray[0] = array[0];
-//        n = 1;
-//        for (int i = 1; i < array.length; i++) {
-//            if (array[i] != array[i - 1]) resArray[n++] = array[i];
-//        }
-//        return resArray;
-//    }
-//
-//    Number[] copyingArrayToArray(Number[] array1, Number[] array2) {/////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//        if (array1.length >= array2.length) {
-//            array1 = array2;
-//        } else {
-//            for (int i = 0; i < array1.length; i++) {
-//                array1[i] = array2[i];
-//            }
-//
-//        }
-//        return array1;
-//    }
-//
-//    Number[] joinTwoArray(Number[] array1, Number[] array2) {/////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//        int count = 0;
-//        Number[] twoArray = new Number[array1.length + array2.length];
-//        Number[] resArray = new Number[array1.length + array2.length];
-//
-//        for (int i = 0; i < array1.length; i++) {
-//            twoArray[i] = array1[i];
-//            count++;
-//        }
-//        for (int j = 0; j < array2.length; j++) {
-//            twoArray[count++] = array2[j];
-//        }
-//        return resArray;
-//    }
 }
