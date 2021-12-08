@@ -2,13 +2,11 @@ package ua.com.alevel.controller;
 
 import ua.com.alevel.entity.User;
 import ua.com.alevel.service.UserService;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class UserController {
-
     private final UserService userService = new UserService();
 
     public void run() {

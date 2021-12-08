@@ -1,11 +1,9 @@
 package ua.com.alevel.db;
 
 import ua.com.alevel.entity.User;
-
 import java.util.Arrays;
 
 public class DBUser {
-
     private static DBUser instance;
     private User[] users;
 
