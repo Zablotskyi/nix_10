@@ -1,0 +1,288 @@
+2021-12-13 09:55:14,121 INFO [main] info [Main.java:16] Старт программы: 13/12/2021
+2021-12-13 09:55:52,810 INFO [main] info [Main.java:16] Старт программы: 13/12/2021 : 09/55/52
+2021-12-13 09:56:28,028 INFO [main] info [Main.java:16] Старт программы: 13/12/2021 _ 09:56:28
+2021-12-13 09:57:09,604 INFO [main] info [Application.java:56] Автор Джошуа Блох создан
+2021-12-13 09:58:54,602 INFO [main] info [Application.java:169] Книга Числа создана
+2021-12-13 09:58:54,604 INFO [main] info [Application.java:170] Автор Виктор Пелевин создан
+2021-12-13 09:59:18,819 INFO [main] info [Application.java:169] Книга Поколение П создана
+2021-12-13 09:59:18,821 INFO [main] info [Application.java:170] Автор Виктор Пелевин создан
+2021-12-13 10:03:44,860 INFO [main] info [Main.java:16] Старт программы: 13/12/2021 _ 10:03:44
+2021-12-13 10:04:04,151 INFO [main] info [Application.java:168] Книга Числа создана
+2021-12-13 10:04:29,216 INFO [main] info [Application.java:168] Книга Поколение П создана
+2021-12-13 10:06:10,611 INFO [main] info [Main.java:16] Старт программы: 13/12/2021 _ 10:06:10
+2021-12-13 10:06:21,723 INFO [main] info [Application.java:168] Книга Числа создана
+2021-12-13 10:06:42,427 INFO [main] info [Application.java:168] Книга Поколение П создана
+2021-12-13 10:06:49,482 INFO [main] info [Application.java:216] Подключение к базе данных авторов
+2021-12-13 10:07:09,100 INFO [main] info [Application.java:55] Автор Александр Шевченко создан
+2021-12-13 10:07:27,463 INFO [main] info [Application.java:112] Подключение к базе данных книг
+2021-12-14 11:15:28,912 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 11:15:28
+2021-12-14 11:15:35,404 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 11:15:35
+2021-12-14 12:03:17,269 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 12:03:17
+2021-12-14 12:03:41,310 INFO [main] info [Application.java:168] Книга Числа создана
+2021-12-14 12:03:55,617 INFO [main] info [Application.java:168] Книга Поколение П создана
+2021-12-14 12:04:04,817 INFO [main] info [Application.java:216] Подключение к базе данных авторов
+2021-12-14 12:19:18,062 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 12:19:18
+2021-12-14 12:19:31,184 INFO [main] info [Application.java:55] Автор Dbrnjh Gtktdby создан
+2021-12-14 12:19:40,602 WARN [main] warn [Application.java:89] Автор с ID 1 удален
+2021-12-14 12:26:41,037 INFO [main] info [Application.java:112] Подключение к базе данных книг
+2021-12-14 12:26:55,559 INFO [main] info [Application.java:216] Подключение к базе данных авторов
+2021-12-14 12:27:06,935 INFO [main] info [Application.java:55] Автор Виктор Пелевин создан
+2021-12-14 12:27:12,459 INFO [main] info [Application.java:112] Подключение к базе данных книг
+2021-12-14 12:27:20,306 INFO [main] info [Application.java:216] Подключение к базе данных авторов
+2021-12-14 12:27:29,927 WARN [main] warn [Application.java:89] Автор с ID 2 удален
+2021-12-14 12:27:39,230 INFO [main] info [Application.java:112] Подключение к базе данных книг
+2021-12-14 12:31:34,828 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 12:31:34
+2021-12-14 12:31:46,320 INFO [main] info [Application.java:55] Автор Виктор Пелевин создан
+2021-12-14 12:31:55,401 INFO [main] info [Application.java:55] Автор Марк Твен создан
+2021-12-14 12:32:12,670 WARN [main] warn [Application.java:89] Автор с ID 1 удален
+2021-12-14 12:33:06,704 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 12:33:06
+2021-12-14 12:33:29,143 INFO [main] info [Application.java:55] Автор Виктор Пелевин создан
+2021-12-14 12:33:36,637 INFO [main] info [Application.java:55] Автор Марк Твен создан
+2021-12-14 12:33:47,586 WARN [main] warn [Application.java:89] Автор с ID 1 удален
+2021-12-14 12:35:04,396 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 12:35:04
+2021-12-14 12:36:22,174 INFO [main] info [Application.java:55] Автор Виктор Пелевин создан
+2021-12-14 12:36:33,641 INFO [main] info [Application.java:55] Автор Марк Твен создан
+2021-12-14 12:36:42,366 WARN [main] warn [Application.java:89] Автор с ID 1 удален
+2021-12-14 12:38:36,942 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 12:38:36
+2021-12-14 12:38:52,308 INFO [main] info [Application.java:55] Автор Виктор Пелевин создан
+2021-12-14 12:39:01,443 INFO [main] info [Application.java:55] Автор Марк Твен создан
+2021-12-14 12:39:07,450 WARN [main] warn [Application.java:89] Автор с ID 1 удален
+2021-12-14 12:42:06,382 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 12:42:06
+2021-12-14 12:42:23,296 INFO [main] info [Application.java:55] Автор Виктор Пелевин создан
+2021-12-14 12:43:29,107 INFO [main] info [Application.java:55] Автор Марк Твен создан
+2021-12-14 12:43:42,633 WARN [main] warn [Application.java:89] Автор с ID 1 удален
+2021-12-14 12:47:54,472 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 12:47:54
+2021-12-14 12:48:12,834 INFO [main] info [Application.java:55] Автор Виктор Пелевин создан
+2021-12-14 12:53:37,750 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 12:53:37
+2021-12-14 12:53:51,617 INFO [main] info [Application.java:55] Автор Виктор Пелевин создан
+2021-12-14 12:55:59,892 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 12:55:59
+2021-12-14 12:56:08,471 INFO [main] info [Application.java:55] Автор Виктор Пелевин создан
+2021-12-14 12:59:08,988 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 12:59:08
+2021-12-14 12:59:18,882 INFO [main] info [Application.java:55] Автор Виктор Пелевин создан
+2021-12-14 13:00:22,455 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 01:00:22
+2021-12-14 13:01:07,965 INFO [main] info [Application.java:55] Автор Виктор Пелевин создан
+2021-12-14 13:01:36,579 INFO [main] info [Application.java:55] Автор Марк Твен создан
+2021-12-14 13:10:34,602 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 01:10:34
+2021-12-14 13:11:53,273 INFO [main] info [Application.java:55] Автор Виктор Пелевин создан
+2021-12-14 13:12:55,045 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 01:12:55
+2021-12-14 13:13:05,094 INFO [main] info [Application.java:55] Автор Виктор Пелевин создан
+2021-12-14 13:13:49,650 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 01:13:49
+2021-12-14 13:13:59,527 INFO [main] info [Application.java:55] Автор Виктор Пелевин создан
+2021-12-14 13:16:33,038 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 01:16:33
+2021-12-14 13:16:45,986 INFO [main] info [Application.java:55] Автор Dbrnjh Gtktdby создан
+2021-12-14 13:18:24,076 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 01:18:24
+2021-12-14 13:19:09,519 INFO [main] info [Application.java:55] Автор Viktor Pelevin создан
+2021-12-14 13:20:32,712 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 01:20:32
+2021-12-14 13:20:45,818 INFO [main] info [Application.java:55] Автор Viktor Pelevin создан
+2021-12-14 13:23:14,624 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 01:23:14
+2021-12-14 13:23:30,763 INFO [main] info [Application.java:55] Автор viktor pelevin создан
+2021-12-14 13:29:09,229 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 01:29:09
+2021-12-14 13:29:24,218 INFO [main] info [Application.java:55] Автор Viktor Pelevin создан
+2021-12-14 13:30:08,664 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 01:30:08
+2021-12-14 13:30:17,679 INFO [main] info [Application.java:55] Автор V P создан
+2021-12-14 13:33:08,134 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 01:33:08
+2021-12-14 13:33:17,829 INFO [main] info [Application.java:55] Автор V P создан
+2021-12-14 13:34:11,837 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 01:34:11
+2021-12-14 13:34:18,704 INFO [main] info [Application.java:55] Автор V P создан
+2021-12-14 13:36:12,140 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 01:36:12
+2021-12-14 13:36:30,394 INFO [main] info [Application.java:55] Автор V P создан
+2021-12-14 13:41:22,536 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 01:41:22
+2021-12-14 13:41:32,164 INFO [main] info [Application.java:55] Автор V P создан
+2021-12-14 13:41:37,803 INFO [main] info [Application.java:112] Подключение к базе данных книг
+2021-12-14 13:41:54,097 INFO [main] info [Application.java:216] Подключение к базе данных авторов
+2021-12-14 13:43:32,527 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 01:43:32
+2021-12-14 13:43:44,202 INFO [main] info [Application.java:55] Автор V P создан
+2021-12-14 13:43:49,483 INFO [main] info [Application.java:112] Подключение к базе данных книг
+2021-12-14 13:43:54,412 INFO [main] info [Application.java:216] Подключение к базе данных авторов
+2021-12-14 13:45:13,193 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 01:45:13
+2021-12-14 13:45:44,167 INFO [main] info [Application.java:55] Автор V P создан
+2021-12-14 13:51:44,090 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 01:51:44
+2021-12-14 13:53:14,580 INFO [main] info [Application.java:55] Автор V P создан
+2021-12-14 14:01:29,524 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 02:01:29
+2021-12-14 14:01:42,102 INFO [main] info [Application.java:55] Автор V P создан
+2021-12-14 14:02:45,186 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 02:02:45
+2021-12-14 14:59:40,197 INFO [main] info [Application.java:55] Автор V P создан
+2021-12-14 15:01:38,169 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 03:01:38
+2021-12-14 15:01:49,931 INFO [main] info [Application.java:55] Автор V P создан
+2021-12-14 15:02:12,595 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 03:02:12
+2021-12-14 15:02:28,054 INFO [main] info [Application.java:55] Автор V P создан
+2021-12-14 15:09:59,205 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 03:09:59
+2021-12-14 15:10:09,848 INFO [main] info [Application.java:56] Автор V P создан
+2021-12-14 15:10:32,076 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 03:10:32
+2021-12-14 15:10:39,743 INFO [main] info [Application.java:56] Автор V P создан
+2021-12-14 15:10:51,854 INFO [main] info [Application.java:56] Автор VVV PPP создан
+2021-12-14 15:18:08,590 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 03:18:08
+2021-12-14 15:18:18,930 INFO [main] info [Application.java:55] Автор V P создан
+2021-12-14 15:27:33,491 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 03:27:33
+2021-12-14 15:27:48,871 INFO [main] info [Application.java:55] Автор V P создан
+2021-12-14 15:28:03,352 INFO [main] info [Application.java:80] Автор VVV PPP изменен
+2021-12-14 15:28:49,376 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 03:28:49
+2021-12-14 15:28:55,751 INFO [main] info [Application.java:55] Автор V P создан
+2021-12-14 15:29:11,968 INFO [main] info [Application.java:80] Автор VVV PPP изменен
+2021-12-14 15:34:23,510 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 03:34:23
+2021-12-14 15:34:29,892 INFO [main] info [Application.java:55] Автор V P создан
+2021-12-14 15:36:11,074 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 03:36:11
+2021-12-14 15:36:16,219 INFO [main] info [Application.java:57] Автор V P создан
+2021-12-14 15:37:06,338 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 03:37:06
+2021-12-14 15:37:11,996 INFO [main] info [Application.java:57] Автор V P создан
+2021-12-14 15:37:23,103 INFO [main] info [Application.java:82] Автор VVV PPP изменен
+2021-12-14 15:38:28,397 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 03:38:28
+2021-12-14 15:38:44,997 INFO [main] info [Application.java:57] Автор V P создан
+2021-12-14 17:00:19,749 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 05:00:19
+2021-12-14 17:00:38,733 INFO [main] info [Application.java:57] Автор В П создан
+2021-12-14 17:00:52,223 INFO [main] info [Application.java:57] Автор М Т создан
+2021-12-14 17:01:03,701 INFO [main] info [Application.java:116] Подключение к базе данных книг
+2021-12-14 17:02:56,321 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 05:02:56
+2021-12-14 17:03:04,164 INFO [main] info [Application.java:57] Автор В П создан
+2021-12-14 17:03:13,838 INFO [main] info [Application.java:57] Автор М Т создан
+2021-12-14 17:03:17,667 INFO [main] info [Application.java:116] Подключение к базе данных книг
+2021-12-14 17:03:45,972 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 05:03:45
+2021-12-14 17:03:55,938 INFO [main] info [Application.java:57] Автор В П создан
+2021-12-14 17:04:04,678 INFO [main] info [Application.java:57] Автор М Т создан
+2021-12-14 17:04:07,118 INFO [main] info [Application.java:116] Подключение к базе данных книг
+2021-12-14 17:06:45,604 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 05:06:45
+2021-12-14 17:06:55,409 INFO [main] info [Application.java:57] Автор V P создан
+2021-12-14 17:07:07,720 INFO [main] info [Application.java:57] Автор M T создан
+2021-12-14 17:07:15,531 INFO [main] info [Application.java:116] Подключение к базе данных книг
+2021-12-14 17:07:53,488 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 05:07:53
+2021-12-14 17:08:09,563 INFO [main] info [Application.java:57] Автор V P создан
+2021-12-14 17:08:15,755 INFO [main] info [Application.java:57] Автор M T создан
+2021-12-14 17:08:22,790 INFO [main] info [Application.java:116] Подключение к базе данных книг
+2021-12-14 17:08:55,756 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 05:08:55
+2021-12-14 17:09:03,348 INFO [main] info [Application.java:57] Автор V P создан
+2021-12-14 17:09:09,690 INFO [main] info [Application.java:57] Автор M T создан
+2021-12-14 17:09:19,265 INFO [main] info [Application.java:116] Подключение к базе данных книг
+2021-12-14 17:35:39,613 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 05:35:39
+2021-12-14 17:36:50,417 INFO [main] info [Application.java:222] Подключение к базе данных авторов
+2021-12-14 17:37:19,391 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 05:37:19
+2021-12-14 17:39:42,847 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 05:39:42
+2021-12-14 17:59:27,467 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 05:59:27
+2021-12-14 18:00:17,770 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 06:00:17
+2021-12-14 18:00:31,766 INFO [main] info [Application.java:57] Автор V P создан
+2021-12-14 18:00:45,195 INFO [main] info [Application.java:81] Автор VV PP изменен
+2021-12-14 18:00:52,569 WARN [main] warn [Application.java:101] Был запрос на автора с ID 1
+2021-12-14 18:04:50,337 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 06:04:50
+2021-12-14 18:04:58,991 INFO [main] info [Application.java:57] Автор V P создан
+2021-12-14 18:05:37,984 INFO [main] info [Application.java:57] Автор V P создан
+2021-12-14 18:07:22,560 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 06:07:22
+2021-12-14 18:07:32,638 INFO [main] info [Application.java:58] Автор V P создан
+2021-12-14 18:07:56,088 INFO [main] info [Application.java:58] Автор M T создан
+2021-12-14 18:08:18,004 INFO [main] info [Application.java:83] Автор VV PP изменен
+2021-12-14 18:08:36,743 INFO [main] info [Application.java:117] Подключение к базе данных книг
+2021-12-14 18:08:54,011 INFO [main] info [Application.java:224] Подключение к базе данных авторов
+2021-12-14 18:08:58,748 WARN [main] warn [Application.java:93] Автор с ID 1 удален
+2021-12-14 18:09:04,175 INFO [main] info [Application.java:117] Подключение к базе данных книг
+2021-12-14 18:20:59,002 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 06:20:58
+2021-12-14 18:21:14,462 INFO [main] info [Application.java:58] Автор V P создан
+2021-12-14 18:21:23,072 INFO [main] info [Application.java:58] Автор M T создан
+2021-12-14 18:21:32,869 INFO [main] info [Application.java:117] Подключение к базе данных книг
+2021-12-14 18:21:45,531 INFO [main] info [Application.java:224] Подключение к базе данных авторов
+2021-12-14 18:21:59,819 INFO [main] info [Application.java:58] Автор A S создан
+2021-12-14 18:22:36,741 INFO [main] info [Application.java:83] Автор AA SS изменен
+2021-12-14 18:23:15,765 INFO [main] info [Application.java:83] Автор AAA SSS изменен
+2021-12-14 18:23:45,829 WARN [main] warn [Application.java:93] Автор с ID 1 удален
+2021-12-14 18:23:51,781 INFO [main] info [Application.java:117] Подключение к базе данных книг
+2021-12-14 18:36:41,349 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 06:36:41
+2021-12-14 18:37:13,706 INFO [main] info [Application.java:173] Книга Book создана
+2021-12-14 18:37:35,196 INFO [main] info [Application.java:173] Книга Book2 создана
+2021-12-14 18:38:04,908 INFO [main] info [Application.java:190] Книга Bookk изменена
+2021-12-14 18:38:23,912 INFO [main] info [Application.java:224] Подключение к базе данных авторов
+2021-12-14 18:38:46,189 INFO [main] info [Application.java:117] Подключение к базе данных книг
+2021-12-14 18:38:53,830 WARN [main] warn [Application.java:210] Был запрос на книгу с ID 1
+2021-12-14 18:39:09,727 WARN [main] warn [Application.java:199] Книга с ID 2 удалена
+2021-12-14 18:39:37,461 INFO [main] info [Application.java:224] Подключение к базе данных авторов
+2021-12-14 18:42:10,236 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 06:42:10
+2021-12-14 18:42:25,988 INFO [main] info [Application.java:58] Автор V P создан
+2021-12-14 18:42:40,068 INFO [main] info [Application.java:58] Автор M T создан
+2021-12-14 18:48:36,292 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 06:48:36
+2021-12-14 18:48:48,445 INFO [main] info [Application.java:58] Автор V P создан
+2021-12-14 18:52:02,406 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 06:52:02
+2021-12-14 18:52:09,066 INFO [main] info [Application.java:58] Автор V P создан
+2021-12-14 18:53:13,638 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 06:53:13
+2021-12-14 18:53:19,872 INFO [main] info [Application.java:58] Автор V P создан
+2021-12-14 18:57:13,265 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 06:57:13
+2021-12-14 18:57:20,098 INFO [main] info [Application.java:58] Автор V P создан
+2021-12-14 18:58:16,766 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 06:58:16
+2021-12-14 18:58:27,970 INFO [main] info [Application.java:58] Автор V P создан
+2021-12-14 19:53:56,287 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 07:53:56
+2021-12-14 19:54:05,797 INFO [main] info [Application.java:58] Автор V P создан
+2021-12-14 19:54:18,374 INFO [main] info [Application.java:117] Подключение к базе данных книг
+2021-12-14 19:54:24,167 INFO [main] info [Application.java:224] Подключение к базе данных авторов
+2021-12-14 19:57:52,946 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 07:57:52
+2021-12-14 19:58:00,395 INFO [main] info [Application.java:58] Автор V P создан
+2021-12-14 19:58:08,626 INFO [main] info [Application.java:117] Подключение к базе данных книг
+2021-12-14 19:58:15,608 WARN [main] warn [Application.java:210] Был запрос на книгу с ID 1
+2021-12-14 19:59:16,323 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 07:59:16
+2021-12-14 19:59:30,110 INFO [main] info [Application.java:58] Автор V P создан
+2021-12-14 19:59:32,008 INFO [main] info [Application.java:117] Подключение к базе данных книг
+2021-12-14 19:59:48,176 WARN [main] warn [Application.java:210] Был запрос на книгу с ID 1
+2021-12-14 19:59:59,333 INFO [main] info [Application.java:224] Подключение к базе данных авторов
+2021-12-14 20:02:33,735 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 08:02:33
+2021-12-14 20:02:41,410 INFO [main] info [Application.java:58] Автор V P создан
+2021-12-14 20:05:18,768 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 08:05:18
+2021-12-14 20:05:27,095 INFO [main] info [Application.java:58] Автор V P создан
+2021-12-14 20:07:01,750 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 08:07:01
+2021-12-14 20:07:08,664 INFO [main] info [Application.java:58] Автор V P создан
+2021-12-14 20:16:54,455 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 08:16:54
+2021-12-14 20:16:59,712 INFO [main] info [Application.java:58] Автор V P создан
+2021-12-14 20:17:57,663 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 08:17:57
+2021-12-14 20:18:03,070 INFO [main] info [Application.java:58] Автор V P создан
+2021-12-14 20:22:40,190 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 08:22:40
+2021-12-14 20:22:46,321 INFO [main] info [Application.java:58] Автор V P создан
+2021-12-14 20:22:50,508 WARN [main] warn [Application.java:93] Автор с ID 1 удален
+2021-12-14 20:22:55,813 INFO [main] info [Application.java:117] Подключение к базе данных книг
+2021-12-14 20:23:17,565 INFO [main] info [Application.java:224] Подключение к базе данных авторов
+2021-12-14 20:25:30,505 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 08:25:30
+2021-12-14 20:25:38,599 INFO [main] info [Application.java:58] Автор V P создан
+2021-12-14 20:26:41,679 WARN [main] warn [Application.java:93] Автор с ID 1 удален
+2021-12-14 20:33:31,482 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 08:33:31
+2021-12-14 20:33:38,284 INFO [main] info [Application.java:58] Автор V P создан
+2021-12-14 20:33:49,691 WARN [main] warn [Application.java:93] Автор с ID 1 удален
+2021-12-14 20:34:44,487 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 08:34:44
+2021-12-14 20:34:51,144 INFO [main] info [Application.java:58] Автор V P создан
+2021-12-14 20:34:55,322 WARN [main] warn [Application.java:93] Автор с ID 1 удален
+2021-12-14 20:35:36,780 INFO [main] info [Application.java:58] Автор М З создан
+2021-12-14 20:35:51,857 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 08:35:51
+2021-12-14 20:36:03,534 INFO [main] info [Application.java:58] Автор C P создан
+2021-12-14 20:36:13,488 WARN [main] warn [Application.java:93] Автор с ID 1 удален
+2021-12-14 20:36:21,782 INFO [main] info [Application.java:58] Автор V P создан
+2021-12-14 20:36:37,119 INFO [main] info [Application.java:58] Автор M T создан
+2021-12-14 20:49:46,792 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 08:49:46
+2021-12-14 20:49:54,898 INFO [main] info [Application.java:58] Автор V P создан
+2021-12-14 20:50:00,685 INFO [main] info [Application.java:117] Подключение к базе данных книг
+2021-12-14 20:50:05,229 INFO [main] info [Application.java:224] Подключение к базе данных авторов
+2021-12-14 20:50:15,788 INFO [main] info [Application.java:83] Автор VV PP изменен
+2021-12-14 20:50:25,938 WARN [main] warn [Application.java:93] Автор с ID 1 удален
+2021-12-14 20:50:32,498 INFO [main] info [Application.java:117] Подключение к базе данных книг
+2021-12-14 20:50:46,169 INFO [main] info [Application.java:224] Подключение к базе данных авторов
+2021-12-14 20:50:52,795 INFO [main] info [Application.java:58] Автор V P создан
+2021-12-14 20:50:59,583 INFO [main] info [Application.java:117] Подключение к базе данных книг
+2021-12-14 20:51:41,662 INFO [main] info [Application.java:224] Подключение к базе данных авторов
+2021-12-14 20:51:57,862 INFO [main] info [Application.java:117] Подключение к базе данных книг
+2021-12-14 20:52:12,627 WARN [main] warn [Application.java:199] Книга с ID 2 удалена
+2021-12-14 20:52:23,832 WARN [main] warn [Application.java:199] Книга с ID 1 удалена
+2021-12-14 20:52:31,450 INFO [main] info [Application.java:224] Подключение к базе данных авторов
+2021-12-14 20:52:38,482 INFO [main] info [Application.java:58] Автор VVV PPP создан
+2021-12-14 20:52:48,384 INFO [main] info [Application.java:117] Подключение к базе данных книг
+2021-12-14 20:53:00,934 INFO [main] info [Application.java:224] Подключение к базе данных авторов
+2021-12-14 20:53:10,895 WARN [main] warn [Application.java:93] Автор с ID 3 удален
+2021-12-14 20:53:17,630 INFO [main] info [Application.java:117] Подключение к базе данных книг
+2021-12-14 20:53:34,411 INFO [main] info [Application.java:224] Подключение к базе данных авторов
+2021-12-14 20:53:45,319 INFO [main] info [Application.java:58] Автор T M создан
+2021-12-14 20:53:50,549 INFO [main] info [Application.java:117] Подключение к базе данных книг
+2021-12-14 20:54:00,304 INFO [main] info [Application.java:224] Подключение к базе данных авторов
+2021-12-14 20:54:06,362 WARN [main] warn [Application.java:93] Автор с ID 4 удален
+2021-12-14 20:54:11,177 INFO [main] info [Application.java:117] Подключение к базе данных книг
+2021-12-14 21:02:37,232 INFO [main] info [Application.java:224] Подключение к базе данных авторов
+2021-12-14 21:02:47,105 WARN [main] warn [Application.java:93] Автор с ID 2 удален
+2021-12-14 21:02:59,707 INFO [main] info [Application.java:117] Подключение к базе данных книг
+2021-12-14 21:04:22,122 INFO [main] info [Application.java:224] Подключение к базе данных авторов
+2021-12-14 21:07:26,158 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 09:07:26
+2021-12-14 21:07:33,540 INFO [main] info [Application.java:224] Подключение к базе данных авторов
+2021-12-14 21:15:29,493 INFO [main] info [Main.java:16] Старт программы: 14/12/2021 _ 09:15:29
+2021-12-14 21:17:00,053 INFO [main] info [Application.java:55] Автор В П создан
+2021-12-14 21:17:13,629 INFO [main] info [Application.java:55] Автор В П создан
+2021-12-14 21:17:37,891 INFO [main] info [Application.java:114] Подключение к базе данных книг
+2021-12-14 21:17:47,730 INFO [main] info [Application.java:221] Подключение к базе данных авторов
+2021-12-14 21:17:50,591 WARN [main] warn [Application.java:90] Автор с ID 1 удален
+2021-12-14 21:17:55,062 INFO [main] info [Application.java:114] Подключение к базе данных книг

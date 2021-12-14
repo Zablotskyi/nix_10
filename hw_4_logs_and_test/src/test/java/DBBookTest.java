@@ -1,7 +1,6 @@
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import ua.com.alevel.db.DBAuthor;
 import ua.com.alevel.db.DBBook;
 import ua.com.alevel.entity.Book;
 import java.util.Arrays;
@@ -11,7 +10,6 @@ public class DBBookTest {
     @Before
     public void setUp() {
         Book bookTest = new Book("Name", "AuthorName");
-
         DBBook.getInstance().create(bookTest);
     }
 
@@ -54,8 +52,8 @@ public class DBBookTest {
     public void ifAuthorDeleteShouldReturnNull() {
         long bookID = 1;
 
-        DBAuthor.getInstance().findById(bookID);
-        DBAuthor.getInstance().delete(bookID);
+        DBBook.getInstance().findById(bookID);
+        DBBook.getInstance().delete(bookID);
         Assert.assertEquals(null, null);
     }
 }

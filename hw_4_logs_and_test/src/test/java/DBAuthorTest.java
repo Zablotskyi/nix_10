@@ -10,7 +10,6 @@ public class DBAuthorTest {
     @Before
     public void setUp() {
         Author authorTest = new Author("Name", "LastName");
-
         DBAuthor.getInstance().create(authorTest);
     }
 
