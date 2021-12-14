@@ -17,8 +17,8 @@ public class AuthorDao {
         DBAuthor.getInstance().delete(id);
     }
 
-    public void findById(long id) {
-        DBAuthor.getInstance().findById(id);
+    public Author findById(long id) {
+        return DBAuthor.getInstance().findById(id);
     }
 
     public Author[] findAll() {

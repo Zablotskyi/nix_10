@@ -1,7 +1,7 @@
 package ua.com.alevel.entity;
 
 public class Author {
-    static long count = 0;
+    static long count = 1;
     private long id;
     private String name;
     private String lastName;
@@ -12,6 +12,13 @@ public class Author {
         this.name = name;
         this.lastName = lastName;
         this.bookName = bookName;
+        count++;
+    }
+
+    public Author(String name, String lastName) {
+        this.id = count;
+        this.name = name;
+        this.lastName = lastName;
         count++;
     }
 

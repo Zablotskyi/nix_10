@@ -1,53 +1,59 @@
 package ua.com.alevel.db;
 
 import ua.com.alevel.entity.Book;
-
 import java.util.Arrays;
 
 public class DBBook {
     private static DBBook instance;
-    private Book[] books;
+    private Book[] booksArray;
+    private static DBBook dbBook;
 
     private DBBook() {
-        books = new Book[10];
+        booksArray = new Book[10];
+    }
+
+    public Book[] getBooksArray() {
+        return booksArray;
     }
 
     public static DBBook getInstance() {
         if (instance == null) {
             instance = new DBBook();
+            dbBook = DBBook.getInstance();
         }
         return instance;
     }
 
     public void create(Book book) {
         book.setId(book.getId());
-        for (Book element : books) {
-            if (element == null) {
-                element = book;
+        for (int i = 0; i < booksArray.length; i++) {
+            if (booksArray[i] == null) {
+                booksArray[i] = book;
                 break;
             }
         }
-        ifArrayBookIsFull(books);
+        ifArrayBookIsFull(booksArray);
     }
 
     public void update(Book book) {
         Book current = findById(book.getId());
         current.setName(book.getName());
         current.setYearOfPrinting(book.getYearOfPrinting());
+        current.setAuthorName(book.getAuthorName());
     }
 
     public void delete(long id) {
-        for (Book book : books) {
-            if (id == (book.getId())) {
-                book = null;
+        for (int i = 0; i < booksArray.length; i++) {
+            if (booksArray[i] != null && booksArray[i].getId() == id) {
+                booksArray[i] = null;
+                break;
             }
         }
-        arrayBooksSizeDown();
     }
 
     public Book findById(long id) {
-        for (Book book : books) {
-            if (id == (book.getId())) {
+        for (Book book : booksArray) {
+            if (id == (book.getId()) && book != null) {
                 return book;
             }
         }
@@ -55,36 +61,28 @@ public class DBBook {
     }
 
     public Book[] findAll() {
-        return books;
+        if (booksArray != null) {
+            return booksArray;
+        } else {
+            System.out.println("Список автров пуст");
+        }
+        return booksArray;
     }
 
     private void arrayBooksSizeUp() {
-        books = Arrays.copyOf(books, books.length + 1);
+        booksArray = Arrays.copyOf(booksArray, booksArray.length + 1);
     }
 
-    private void arrayBooksSizeDown() {
-        Book[] tempArrayBook = Arrays.copyOf(books, books.length);
-        books = new Book[tempArrayBook.length - 1];
-
-        int count = 0;
-        for (int i = 0; i < tempArrayBook.length; i++) {
-            if (tempArrayBook[count] != null) {
-                books[count] = tempArrayBook[i];
-                count++;
-            }
-        }
-    }
-
-    private void ifArrayBookIsFull(Book[] books) {
+    private void ifArrayBookIsFull(Book[] booksArray) {
         int count = 0;
         int currentSizeArray = 0;
-        for (Book book : books) {
+        for (Book book : booksArray) {
             if (book == null) {
                 count++;
             } else {
                 currentSizeArray++;
             }
-            if (count == books.length - currentSizeArray) {
+            if (count == booksArray.length - currentSizeArray) {
                 arrayBooksSizeUp();
             }
         }

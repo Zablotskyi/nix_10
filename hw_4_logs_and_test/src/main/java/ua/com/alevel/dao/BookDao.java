@@ -17,13 +17,11 @@ public class BookDao {
         DBBook.getInstance().delete(id);
     }
 
-    public void findById(long id) {
-        DBBook.getInstance().findById(id);
+    public Book findById(long id) {
+        return DBBook.getInstance().findById(id);
     }
 
     public Book[] findAll() {
         return DBBook.getInstance().findAll();
     }
-
-
 }

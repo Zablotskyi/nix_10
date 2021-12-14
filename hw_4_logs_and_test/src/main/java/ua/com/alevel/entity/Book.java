@@ -15,6 +15,13 @@ public class Book {
         count++;
     }
 
+    public Book(String name, String authorName) {
+        this.id = count;
+        this.name = name;
+        this.authorName = authorName;
+        count++;
+    }
+
     public long getId() {
         return id;
     }
@@ -52,7 +59,8 @@ public class Book {
         return "Book{" +
                 "id=" + id +
                 ", Нзвание: '" + name + '\'' +
-                ", Год изания: " + yearOfPrinting +
+                ", Год изания: " + yearOfPrinting + '\'' +
+                ", Автор: " + authorName + '\'' +
                 '}';
     }
 }

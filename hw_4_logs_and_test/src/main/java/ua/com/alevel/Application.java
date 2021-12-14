@@ -1,10 +1,14 @@
 package ua.com.alevel;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import ua.com.alevel.controller.AuthorController;
 import ua.com.alevel.controller.BookController;
 import java.util.Scanner;
+import static ua.com.alevel.Main.LOGGER_INFO;
 
 public class Application {
+    private static final Logger LOGGER_WARN = LoggerFactory.getLogger("warn");
     AuthorController authorController = new AuthorController();
     BookController bookController = new BookController();
     String next = null;
@@ -15,9 +19,9 @@ public class Application {
                     Автор:
                     Нажмите 1 + 'enter' чтоб Добавить автора\s
                     Нажмите 2 + 'enter' чтоб Изменить данные автора\s
-                    Нажмите 3 + 'enter' для того чтоб Удалить автора\s
-                    Нажмите 4 + 'enter' для того чтоб Найти автора по 'ID'\s
-                    Нажмите 5 + 'enter' для того чтоб Найти Всех авторов\s
+                    Нажмите 3 + 'enter' чтоб Удалить автора\s
+                    Нажмите 4 + 'enter' чтоб Найти автора по 'ID'\s
+                    Нажмите 5 + 'enter' чтоб Найти Всех авторов\s
                                     
                     Нажмите 9 + 'enter' для работы с Базой Книг\s
                     для выхода введие 'exit'""");
@@ -32,53 +36,84 @@ public class Application {
                     if ((step > 0 && step <= 5) || (step == 9)) {
                         switch (action) {
                             case "1": {
-                                System.out.println("Введите имя автора:");
-                                String name = scanner.nextLine();
-                                System.out.println("Введите фамилию автора:");
-                                String lastName = scanner.nextLine();
-                                System.out.println("Введите название книги которую написал автор:");
+                                System.out.println("Введите имя и фамилию автора:");
+                                String nameAndLastName = scanner.nextLine();
+                                System.out.println("Введите название книги которую написал автор (если книги нет, нажмите 'enter'):");
                                 String bookName = scanner.nextLine();
-                                System.out.println("Автор создан! Для продолжения работы нажмите любую клавишу + 'enter'");
+                                try {
+                                    if (bookName.equals("")) {
+                                        authorController.create(nameAndLastName);
+                                    } else {
+                                        authorController.create(nameAndLastName, bookName);
+                                        bookController.create(bookName, nameAndLastName);
+                                    }
+                                } catch (Exception e) {
+                                    System.out.println("Вы неправильно ввели данные автора. Повторите попытку");
+//                                    System.out.println("Если книга отсутвует нажмите 'enter'");
+                                    runAuthors();
+                                }
+                                LOGGER_INFO.info("Автор " + nameAndLastName + " создан");
+                                System.out.println("Для продолжения работы нажмите 'enter'");
                                 next = scanner.nextLine();
-                                authorController.create(name, lastName, bookName);
                                 runAuthors();
+                                break;
                             }
                             case "2": {
-                                System.out.println("Введите имя автора:");
-                                String name = scanner.nextLine();
-                                System.out.println("Введите фамилию автора:");
-                                String lastName = scanner.nextLine();
-                                System.out.println("Введите название книги которую написал автор:");
+                                System.out.println("Введите ID автора данные которого нужно изменить:");
+                                long id = Long.parseLong(scanner.nextLine());
+                                System.out.println("Введите имя и фамилию автора:");
+                                String nameAndLastName = scanner.nextLine();
+                                System.out.println("Введите название книгу которую написал автор (если книги нет, нажмите 'enter'):");
                                 String bookName = scanner.nextLine();
-                                System.out.println("Автор изменен! Для продолжения работы нажмите любую клавишу + 'enter'");
+                                try {
+                                    if (bookName.equals("")) {
+                                        authorController.update(id, nameAndLastName);
+                                    } else {
+                                        authorController.update(id, nameAndLastName, bookName);
+                                        bookController.create(bookName, nameAndLastName);
+                                    }
+                                } catch (Exception e) {
+                                    System.out.println("Вы неправильно ввели данные автора. Повторите попытку");
+//                                    System.out.println("Если книга отсутвует нажмите 'enter'");
+                                    runAuthors();
+                                }
+                                LOGGER_INFO.info("Автор " + nameAndLastName + " изменен");
+                                System.out.println("Для продолжения работы нажмите 'enter'");
                                 next = scanner.nextLine();
-                                authorController.update(name, lastName, bookName);
                                 runAuthors();
+                                break;
                             }
                             case "3": {
                                 System.out.println("Введите ID автора которого нужно удалить:");
-                                long id = scanner.nextLong();
-                                System.out.println("Автор удален! Для продолжения работы нажмите любую клавишу + 'enter'");
-                                next = scanner.nextLine();
+                                long id = Long.parseLong(scanner.nextLine());
                                 authorController.delete(id);
+                                LOGGER_WARN.warn("Автор с ID " + id + " удален");
+                                System.out.println("Для продолжения работы нажмите 'enter'");
+                                next = scanner.nextLine();
                                 runAuthors();
+                                break;
                             }
                             case "4": {
                                 System.out.println("Введите ID автора которого нужно найти:");
-                                long id = scanner.nextLong();
-                                authorController.findById(id);
-                                System.out.println("Для продолжения работы нажмите любую клавишу + 'enter'");
+                                long id = Long.parseLong(scanner.nextLine());
+                                System.out.println(authorController.findById(id).toString());
+                                LOGGER_WARN.warn("Был запрос на автора с ID " + id);
+                                System.out.println("Для продолжения работы нажмите 'enter'");
                                 next = scanner.nextLine();
                                 runAuthors();
+                                break;
                             }
                             case "5": {
                                 authorController.findAll();
-                                System.out.println("Для продолжения работы нажмите любую клавишу + 'enter'");
+                                System.out.println("Для продолжения работы нажмите 'enter'");
                                 next = scanner.nextLine();
                                 runAuthors();
+                                break;
                             }
                             case "9": {
+                                LOGGER_INFO.info("Подключение к базе данных книг");
                                 runBooks();
+                                break;
                             }
                         }
                     } else {
@@ -104,12 +139,12 @@ public class Application {
 
     public void runBooks() {
         System.out.println("""
-                Автор:
+                Книги:
                 Нажмите 1 + 'enter' чтоб Добавить книгу\s
                 Нажмите 2 + 'enter' чтоб Изменить данные книги\s
-                Нажмите 3 + 'enter' для того чтоб Удалить книгу\s
-                Нажмите 4 + 'enter' для того чтоб Найти книгу по 'ID'\s
-                Нажмите 5 + 'enter' для того чтоб Найти Все книги\s
+                Нажмите 3 + 'enter' чтоб Удалить книгу\s
+                Нажмите 4 + 'enter' чтоб Найти книгу по 'ID'\s
+                Нажмите 5 + 'enter' чтоб Найти Все книги\s
                                 
                 Нажмите 9 + 'enter' для работы с Базой Авторов\s
                 для выхода введие 'exit'""");
@@ -127,50 +162,65 @@ public class Application {
                             System.out.println("Введите название книги:");
                             String name = scanner.nextLine();
                             System.out.println("Введите год издания книги:");
-                            int yearOfPrinting = scanner.nextInt();
-                            System.out.println("Введите автора который написал книгу:");
-                            String authorName = scanner.nextLine();
-                            System.out.println("Книга создана! Для продолжения работы нажмите любую клавишу + 'enter'");
+                            int yearOfPrinting = Integer.parseInt(scanner.nextLine());
+                            System.out.println("Введите автора который написал книгу (если авторов несколько введите их через '/' " +
+                                    "Пример: Альфред Ахо / Моника Лам / Рави Сети + 'enter'");
+                            String authorNameAndLastName = scanner.nextLine();
+                            bookController.create(name, yearOfPrinting, authorNameAndLastName);
+                            LOGGER_INFO.info("Книга " + name + " создана");
+                            System.out.println("Для продолжения работы нажмите 'enter'");
                             next = scanner.nextLine();
-                            bookController.create(name, yearOfPrinting, authorName);
                             runBooks();
+                            break;
                         }
                         case "2": {
+                            System.out.println("Введите ID книги данные которой нужно изменить:");
+                            long id = Long.parseLong(scanner.nextLine());
                             System.out.println("Введите название книги:");
                             String name = scanner.nextLine();
                             System.out.println("Введите год издания книги:");
-                            int yearOfPrinting = scanner.nextInt();
-                            System.out.println("Введите автора который написал книгу:");
-                            String authorName = scanner.nextLine();
-                            System.out.println("Данные книги изменены! Для продолжения работы нажмите любую клавишу + 'enter'");
+                            int yearOfPrinting = Integer.parseInt(scanner.nextLine());
+                            System.out.println("Введите имя и фамилию автора который написал книгу (если авторов несколько введите их через '/' " +
+                                    "Пример: Альфред Ахо / Моника Лам / Рави Сети + 'enter'");
+                            String authorNameAndLastName = scanner.nextLine();
+                            bookController.update(id, name, yearOfPrinting, authorNameAndLastName);
+                            LOGGER_INFO.info("Книга " + name + " изменена");
+                            System.out.println("Для продолжения работы нажмите 'enter'");
                             next = scanner.nextLine();
-                            bookController.update(name, yearOfPrinting, authorName);
                             runBooks();
+                            break;
                         }
                         case "3": {
                             System.out.println("Введите ID книги которую нужно удалить:");
                             long id = scanner.nextLong();
-                            System.out.println("Книга удалена! Для продолжения работы нажмите любую клавишу + 'enter'");
+                            LOGGER_WARN.warn("Книга с ID " + id + " удалена");
+                            System.out.println("Для продолжения работы нажмите 'enter'");
                             next = scanner.nextLine();
-                            authorController.delete(id);
+                            bookController.delete(id);
                             runBooks();
+                            break;
                         }
                         case "4": {
                             System.out.println("Введите ID книги которую нужно найти:");
-                            long id = scanner.nextLong();
-                            authorController.findById(id);
-                            System.out.println("Для продолжения работы нажмите любую клавишу + 'enter'");
+                            long id = Long.parseLong(scanner.nextLine());
+                            System.out.println(bookController.findById(id).toString());
+                            LOGGER_WARN.warn("Был запрос на книгу с ID " + id);
+                            System.out.println("Для продолжения работы нажмите 'enter'");
                             next = scanner.nextLine();
                             runBooks();
+                            break;
                         }
                         case "5": {
-                            authorController.findAll();
-                            System.out.println("Для продолжения работы нажмите любую клавишу + 'enter'");
+                            bookController.findAll();
+                            System.out.println("Для продолжения работы нажмите 'enter'");
                             next = scanner.nextLine();
                             runBooks();
+                            break;
                         }
                         case "9": {
+                            LOGGER_INFO.info("Подключение к базе данных авторов");
                             runAuthors();
+                            break;
                         }
                     }
                 } else {
