@@ -53,7 +53,7 @@ public class DBBook {
 
     public Book findById(long id) {
         for (Book book : booksArray) {
-            if (id == (book.getId()) && book != null) {
+            if (book != null && id == (book.getId())) {
                 return book;
             }
         }

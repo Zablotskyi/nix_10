@@ -3,6 +3,7 @@ import org.junit.Before;
 import org.junit.Test;
 import ua.com.alevel.db.DBBook;
 import ua.com.alevel.entity.Book;
+
 import java.util.Arrays;
 
 public class DBBookTest {
@@ -10,7 +11,9 @@ public class DBBookTest {
     @Before
     public void setUp() {
         Book bookTest = new Book("Name", "AuthorName");
+        Book bookTest2 = new Book("Name2", "AuthorName2");
         DBBook.getInstance().create(bookTest);
+        DBBook.getInstance().create(bookTest2);
     }
 
     @Test
@@ -42,7 +45,7 @@ public class DBBookTest {
 
     @Test
     public void ifBookIsFoundShouldReturnBook() {
-        long bookID = 1;
+        long bookID = DBBook.getInstance().getBooksArray()[0].getId();
 
         Book bookTest = DBBook.getInstance().findById(bookID);
         Assert.assertEquals(bookID, bookTest.getId());
@@ -50,10 +53,8 @@ public class DBBookTest {
 
     @Test
     public void ifAuthorDeleteShouldReturnNull() {
-        long bookID = 1;
-
-        DBBook.getInstance().findById(bookID);
-        DBBook.getInstance().delete(bookID);
-        Assert.assertEquals(null, null);
+        booksArrayShouldArraySizeUp();
+        DBBook.getInstance().delete(DBBook.getInstance().getBooksArray()[0].getId());
+        Assert.assertNull(DBBook.getInstance().getBooksArray()[0]);
     }
 }
