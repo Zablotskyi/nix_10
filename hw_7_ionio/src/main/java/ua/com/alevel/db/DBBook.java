@@ -1,7 +1,6 @@
 package ua.com.alevel.db;
 
 import ua.com.alevel.Application;
-import ua.com.alevel.entity.Author;
 import ua.com.alevel.entity.Book;
 
 import java.io.*;
@@ -12,7 +11,7 @@ public class DBBook implements Serializable {
     private static DBBook instance;
     private List<Book> booksList;
     private static DBBook dbBook;
-    private static File fileName = new File("./hw_7_ionio/src/main/resources/dbBook.txt");
+    private static File fileName = new File("./src/main/resources/dbBook.txt");
     Application application = new Application();
 
     public DBBook() {

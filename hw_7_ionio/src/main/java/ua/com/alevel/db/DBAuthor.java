@@ -12,7 +12,7 @@ public class DBAuthor implements Serializable {
     private List<Author> authorsList;
     private static DBAuthor dbAuthor;
     private static DBBook dbBook;
-    private static File fileName = new File("./hw_7_ionio/src/main/resources/dbAuthor.txt");
+    private static File fileName = new File("./src/main/resources/dbAuthor.txt");
     Application application = new Application();
 
     public DBAuthor() {
