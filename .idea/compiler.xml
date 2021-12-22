@@ -21,10 +21,10 @@
       <module name="hw_1_base_operations" target="14" />
       <module name="hw_2_strings" target="14" />
       <module name="hw_3_start_oop" target="14" />
-      <module name="hw_4_logs_and_test" target="17" />
+      <module name="hw_4_logs_and_test" target="16" />
       <module name="hw_5_collection" target="15" />
       <module name="hw_6_exception" target="15" />
-      <module name="hw_7_ionio" target="14" />
+      <module name="hw_7_ionio" target="15" />
       <module name="module_1" target="15" />
       <module name="module_2" target="17" />
       <module name="nix_10" target="14" />

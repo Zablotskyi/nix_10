@@ -4,8 +4,10 @@ import ua.com.alevel.Application;
 import ua.com.alevel.dao.AuthorDao;
 import ua.com.alevel.entity.Author;
 
+import java.util.List;
+
 public class AuthorService {
-    private final AuthorDao authorDao = new AuthorDao();
+    private AuthorDao authorDao = new AuthorDao();
 
     public void create(String authorNameAndLastName) {
         Author author = new Author(parseAuthorsName(authorNameAndLastName)[0], parseAuthorsName(authorNameAndLastName)[1]);
@@ -46,7 +48,7 @@ public class AuthorService {
         return authorDao.findById(id);
     }
 
-    public Author[] findAll() {
+    public List<Author> findAll() {
         return authorDao.findAll();
     }
 

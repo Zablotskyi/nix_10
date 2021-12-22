@@ -64,7 +64,7 @@ public class DBBook {
         if (booksArray != null) {
             return booksArray;
         } else {
-            System.out.println("Список автров пуст");
+            System.out.println("Список книг пуст");
         }
         return booksArray;
     }

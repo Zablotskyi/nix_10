@@ -286,3 +286,12 @@
 2021-12-14 21:17:47,730 INFO [main] info [Application.java:221] РџРѕРґРєР»СЋС‡РµРЅРёРµ Рє Р±Р°Р·Рµ РґР°РЅРЅС‹С… Р°РІС‚РѕСЂРѕРІ
 2021-12-14 21:17:50,591 WARN [main] warn [Application.java:90] РђРІС‚РѕСЂ СЃ ID 1 СѓРґР°Р»РµРЅ
 2021-12-14 21:17:55,062 INFO [main] info [Application.java:114] РџРѕРґРєР»СЋС‡РµРЅРёРµ Рє Р±Р°Р·Рµ РґР°РЅРЅС‹С… РєРЅРёРі
+2021-12-22 21:25:01,276 INFO [main] info [Main.java:15] Старт программы: 22/12/2021 _ 09:25:01
+2021-12-22 21:25:13,756 INFO [main] info [Application.java:55] Автор v p создан
+2021-12-22 21:25:23,731 INFO [main] info [Application.java:55] Автор m t создан
+2021-12-22 21:25:39,058 INFO [main] info [Application.java:55] Автор v p создан
+2021-12-22 22:19:06,463 INFO [main] info [Main.java:15] Старт программы: 22/12/2021 _ 10:19:06
+2021-12-22 22:19:21,474 INFO [main] info [Application.java:55] Автор v p создан
+2021-12-22 22:26:25,246 INFO [main] info [Main.java:15] Старт программы: 22/12/2021 _ 10:26:25
+2021-12-22 22:26:31,582 INFO [main] info [Application.java:55] Автор v p создан
+2021-12-22 22:26:48,551 WARN [main] warn [Application.java:100] Был запрос на автора с ID 1
